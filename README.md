@@ -28,7 +28,7 @@ To develop a python control code to move the mobilerobot along the predefined pa
 ### Step5:
 
 <b>Cleanup:</b> After all movements and LED manipulations are completed, stop the video streaming and close the connection to the robot.
-<br>
+<br/>
 
 ## Program
 ```python
@@ -77,7 +77,6 @@ if _name_ == '_main_':
     ep_chassis.move(x=1.23, y=0, z=0, xy_speed=1).wait_for_completed()
     ep_led.set_led(comp = "all",r=255,g=100,b=0,effect="on")
 
-
     ep_chassis.move(x=0.001, y=0, z=48, xy_speed=1).wait_for_completed()
     ep_led.set_led(comp = "all",r=255,g=100,b=0,effect="on")
 
@@ -103,8 +102,6 @@ if _name_ == '_main_':
     ep_led.set_led(comp = "all",r=255,g=100,b=0,effect="on")
 
 
-
-
     time.sleep(4)
     ep_camera.stop_video_stream()
     print("Stopped video streaming.....")
@@ -118,11 +115,8 @@ if _name_ == '_main_':
 
 ![image](https://github.com/Sajetha13/mobilerobot-openloopcontrol/assets/138849316/01fca2c4-cea0-42ce-8c27-da756ce381e1)
 
-<br/>
 ![image](https://github.com/Sajetha13/mobilerobot-openloopcontrol/assets/138849316/bac719fe-7ee1-457b-9385-f2975a39173d)
-<br/>
-<br/>
-<br/>
+
 
 ## MobileRobot Movement Video:
 
@@ -131,8 +125,6 @@ https://www.youtube.com/watch?v=lEgqTxZQSi0
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 
-<br/>
-<br/>
 
 ## Result:
 Thus the python program code is developed to move the mobilerobot in the predefined path.
